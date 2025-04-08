@@ -25,10 +25,12 @@ h1:hover{
     width: 200px;
     height: 200px;
     background-color: rgb(255, 227, 232);
+    border-radius: 20px;
 }
 
 #box3{
     width: 200px;
     height: 200px;
     background-color: pink;
+    border-radius: 10px;
 }
