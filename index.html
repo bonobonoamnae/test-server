@@ -7,13 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>말차 </title>
         <link rel="icon" href="Faviconai.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
         <h1>테스트용 서버입니다</h1>
         <img width=30% src="말차.jpg">
         <br>
-        <p> 얘가 말차임</p>
+        <p class="malcha"> 얘가 말차임</p>
         <br>
         <br>
         <br>
@@ -28,6 +29,11 @@
           <br>
           <br>
           <br>
+          <div>
+            <p id="box1"></p>
+            <p id="box2"></p>
+            <p id="box3"></p>
+          </div>
 
 
         <img width=100% src="image 1.jpg" />
@@ -36,12 +42,27 @@
         <br>
         <br>
         <br>
-
-        <input type="file" accept="image/*, text/*" name="file"/>
-        <br>
-        <input type="password" name="password"/>
-        <br>
-        <input type="text" name="text"/>
         
     </body>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>비밀번호 입력</title>
+      </head>
+      <body>
+        <h2>그림판 들어가기</h2>
+        <input type="password" id="pw" placeholder="비밀번호를 입력하세요">
+        <button onclick="checkPassword()">입장하기</button>
+      
+        <script>
+          function checkPassword() {
+            const pw = document.getElementById("pw").value;
+            if (pw === "1024") {
+              window.location.href = "board/board.html";
+            } else {
+              alert("비밀번호가 틀렸습니다!");
+            }
+          }
+        </script>
+      </body>
 </html>

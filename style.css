@@ -1,0 +1,34 @@
+h1{
+    color: rgb(199, 120, 222);
+    background-color:  pink;
+    padding-top: 30px;"
+    margin:0 auto;
+}
+
+h1:hover{
+    background-color: black;
+    color: white;
+}
+
+.malcha:hover{
+    color: rgb(109, 241, 136)
+}
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 30px;
+}
+
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 227, 232);
+}
+
+#box3{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
