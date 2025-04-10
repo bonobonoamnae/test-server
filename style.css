@@ -1,17 +1,79 @@
-h1{
+#toggleTitle {
+    position: relative;
+  }
+
+.main{
     color: rgb(199, 120, 222);
     background-color:  pink;
-    padding-top: 30px;"
-    margin:0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-h1:hover{
-    background-color: black;
-    color: white;
+.main:hover{
+    background-color: rgb(255, 156, 173);
+    color: rgb(199, 120, 222);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    display: block;
 }
 
+#toggleTitle:hover + #optionBoxes {
+    display: block;
+  }
+
+
+.option-boxes {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.option {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #ffe4f4;
+    border: 2px solid #e27bdc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.option:hover {
+    background-color: #ffc6e7;
+}
+  
 .malcha:hover{
     color: rgb(109, 241, 136)
+}
+
+.malcha{
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px; 
+    background-color: #fff0f5;
+    width: 70%; 
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.img-malcha{
+    display: block;
+    border-radius: 12px;
+    
 }
 
 #box1{
