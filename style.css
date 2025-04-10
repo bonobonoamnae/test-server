@@ -3,8 +3,8 @@
   }
 
 .main{
-    color: rgb(199, 120, 222);
-    background-color:  pink;
+    color: rgb(75, 155, 132);
+    background-color:  rgb(219, 236, 230);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -14,8 +14,8 @@
 }
 
 .main:hover{
-    background-color: rgb(255, 156, 173);
-    color: rgb(199, 120, 222);
+    background-color: rgb(176, 209, 197);
+    color: rgb(241, 248, 245);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
     display: block;
@@ -28,9 +28,21 @@
 
 .option-boxes {
     display: none;
-    margin-top: 20px;
+    top: 100%;
+    margin-top: 0;
     text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none; 
     transition: all 0.3s ease;
+    background-color: #efefefd9;
+    border-radius: 12px;
+}
+
+.container:hover .option-boxes {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .option {
@@ -40,7 +52,7 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 4%;
-    background-color: #e1e1e1d9;
+    background-color:#e0dfdfd9;
     color: rgb(53, 53, 53);
     border-radius: 12px;
     cursor: pointer;
@@ -52,12 +64,14 @@
 }
   
 .malcha:hover{
-    color: rgb(109, 241, 136)
+    color: rgb(0, 105, 0);
 }
 
 .malcha{
     font-size: 15pt;
     font-weight: bold;
+    color: rgb(37, 164, 37);
+    text-shadow: 3px 2px 2px rgb(177, 177, 177);
 }
 
 .frame {
@@ -67,7 +81,7 @@
     align-items: center;
     padding: 20px;
     border-radius: 20px; 
-    background-color: #fff0f5;
+    background-color: #fffbdf;
     width: 80%; 
     margin: 0 auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
