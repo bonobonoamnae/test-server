@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>말차 </title>
+        <link rel="icon" href="../Faviconai.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="titlestyle.css">
+        <script src="script.js" defer ></script>
+    </head>
+
+    <body>
+      <div class="container" id="menuWrap">
+        <h1 class="main" id="toggleTitle">말차 서버</h1>
+        <div class="option-boxes" id="optionBoxes">
+          <div class="option" id="option1">1</div>
+          <div class="option" id="option2">2</div>
+          <div class="option" id="option3">3</div>
+        </div>
+      </div>
+
+      <script> 
+        option1.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "../title 1/title1.html"
+        });
+
+        option2.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "../title 2/title2.html"
+        });
+
+        option3.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "../title 3/title3.html"
+        });
+          
+      </script>
+      
+      <div class="board">
+        <h1>2번</h1>
+      </div>
+    </body>
