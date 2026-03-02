@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>말차 </title>
+        <link rel="icon" href="Faviconai.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="titlestyle.css">
+        <script src="script.js" defer ></script>
+    </head>
+
+    <body>
+      <div class="container" id="menuWrap">
+        <h1 class="main" id="toggleTitle">말차 서버</h1>
+        <div class="option-boxes" id="optionBoxes">
+          <div class="option" id="option1">말차의 인생</div>
+          <div class="option" id="option2">바질의 등장</div>
+          <div class="option" id="option3">문의</div>
+        </div>
+      </div>
+
+      <script srx=""> 
+        option1.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "../title 1/title1.html"
+        });
+
+        option2.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "../title 2/title2.html"
+        });
+
+        option3.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "../title 3/title3.html"
+        });
+          
+      </script>
+
+      <div class="board">
+        <h1 class="grim">그림판입니다</h1>
+      </div>
+
+      <canvas id="canvas"></canvas>
+
+      <input type="range" id="brushSize" min="1" max="50" value="6">
+      <span id="sizeLabel">6px</span>  
+
+      <input type="color" id="colorPicker" value="#000000">
+      <button id="penBtn">펜</button>
+      <button id="eraserBtn">지우개</button>
+      <button id="undoBtn">앗실수</button>
+      <button id="clearBtn">샤갈 다지워!!</button>
+    </body>
+
+    <select id="exportType">
+      <option value="png">PNG</option>
+      <option value="jpg">JPG</option>
+      <option value="pdf">PDF</option>
+    </select>
+
+    <button id="saveBtn">저장하기</button>
+    
+
+        <!-- 레이어 패널(추가) -->
+    <div id="layerPanel">
+      <div style="display:flex; gap:8px; align-items:center;">
+        <strong>레이어</strong>
+        <button id="addLayerBtn">+ 추가</button>
+        <strong> --comming soon</strong>
+      </div>
+      <div id="layerList"></div>
+    </div>
+
+    <!-- 캔버스가 겹쳐질 영역(추가) -->
+    <div id="canvasWrap"></div>

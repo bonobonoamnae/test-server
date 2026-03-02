@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>말차 </title>
+        <link rel="icon" href="Faviconai.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer ></script>
+    </head>
+
+    <body>
+      <div class="container" id="menuWrap">
+        <h1 class="main" id="toggleTitle">말차 서버</h1>
+        <div class="option-boxes" id="optionBoxes">
+          <div class="option" id="option1">말차의 인생</div>
+          <div class="option" id="option2">바질의 등장</div>
+          <div class="option" id="option3">문의</div>
+        </div>
+      </div>
+
+      <script> 
+        option1.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "title 1/title1.html"
+        });
+
+        option2.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "title 2/title2.html"
+        });
+
+        option3.addEventListener("click", () => {manuallyToggled = !manuallyToggled;
+        window.location.href = "title 3/title3.html"
+        });
+          
+      </script>
+
+        <div class="frame">
+          <img class="img-malcha" width=95% src="말차.jpg">
+          <p class="malcha"> 얘가 말차임</p>
+        </div>
+        <br>
+        
+          <br>
+          <img wide="236" height="164" src="blog frog.png"> </a>
+          <br>
+          <br>
+          <br>
+          
+         
+        <meta charset="UTF-8">
+        <title>비밀번호 입력</title>
+      
+        <h2>그림판 들어가기</h2>
+        <input type="password" id="pw" placeholder="비밀번호를 입력하십쇼">
+        <button onclick="checkPassword()" id="pwbotton">입장하기</button>
+      
+       <script>
+          function checkPassword() {
+            const pw = document.getElementById("pw").value.trim();
+
+            if (pw === "") {
+              alert("입력을 하시지요");
+            } else if (pw === "1024") {
+              window.location.href = "board/board.html";
+            } else {
+              alert("아니죠?");
+            }
+          }
+       </script>
+
+       <br>
+       <br>
+      
+
+        <iframe class="borivid" src="https://www.youtube.com/embed/KIwO9msxuk8?si=5gcQBT7UrBkZy2vz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br>
+        
+    </body>
+ 
+</html>

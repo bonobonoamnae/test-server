@@ -1,0 +1,84 @@
+#menuWrap {
+    position: relative;
+    display: inline-block;
+    width: min(5200px, 90vw);
+    margin: 0 auto;
+}
+
+body {
+  text-align: center;  /* inline-block 가운데 정렬용 */
+}
+
+.main{
+    color: rgb(75, 155, 132);
+    background-color:  rgb(219, 236, 230);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main:hover{
+    background-color: rgb(176, 209, 197);
+    color: rgb(241, 248, 245);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+
+
+.option-boxes {
+  width: min(5200px, 90vw);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px); /* 시작 위치 */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background-color: rgb(235, 240, 237);
+  border-radius: 0 0 12px 12px;
+  padding: 10px;
+  z-index: 10;
+  text-align: center;
+}
+
+.option-boxes.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+.option {
+    display: inline-block;
+    padding: 2.5% 3%;
+    margin: 5px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    background-color:#e0dfdfd9;
+    color: rgb(53, 53, 53);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.option:hover {
+    background-color: #ffc6e7;
+}
+
+.basil-img {
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.storybasil {
+    background-color: rgb(220, 255, 243);
+    padding: 3%;
+    border-radius: 14px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+}
