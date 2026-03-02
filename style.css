@@ -20,11 +20,13 @@ body {
     cursor: pointer;
 }
 
-.main:hover{
-    background-color: rgb(176, 209, 197);
-    color: rgb(241, 248, 245);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
+@media (hover: hover) {
+    .main:hover{
+        background-color: rgb(176, 209, 197);
+        color: rgb(241, 248, 245);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+    }
 }
 
 
@@ -38,7 +40,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-  background-color: #efefefd9;
+  background-color: rgb(235, 240, 237);
   border-radius: 0 0 12px 12px;
   padding: 10px;
   z-index: 10;
@@ -53,14 +55,14 @@ body {
 
 .option {
     display: inline-block;
-    padding: 12px 36px;
+    padding: 2.5% 3%;
     margin: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-bottom: 2%;
     background-color:#e0dfdfd9;
     color: rgb(53, 53, 53);
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -99,23 +101,41 @@ body {
     
 }
 
-#box1{
-    width: 200px;
-    height: 200px;
-    background-color: pink;
-    border-radius: 30px;
+
+#pw,
+button {
+  width: min(400px, 90%);
+  height: 55px;
+  font-size: 18px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
-#box2{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(255, 227, 232);
-    border-radius: 20px;
+
+button {
+  background-color: #7ada7d;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-#box3{
-    width: 200px;
-    height: 200px;
-    background-color: pink;
+
+@media (hover: hover) {
+  button:hover {
+    background-color: #43a047;
+  }
+}
+
+
+button:active {
+  transform: scale(0.98);
+}
+
+.borivid {
+    margin: 0 auto;
+    width: 90%;
     border-radius: 10px;
+    height: 40vw;
 }
