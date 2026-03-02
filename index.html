@@ -15,9 +15,9 @@
       <div class="container" id="menuWrap">
         <h1 class="main" id="toggleTitle">말차 서버</h1>
         <div class="option-boxes" id="optionBoxes">
-          <div class="option" id="option1">1</div>
-          <div class="option" id="option2">2</div>
-          <div class="option" id="option3">3</div>
+          <div class="option" id="option1">말차의 인생</div>
+          <div class="option" id="option2">바질의 등장</div>
+          <div class="option" id="option3">문의</div>
         </div>
       </div>
 
@@ -41,17 +41,9 @@
           <p class="malcha"> 얘가 말차임</p>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
         
-        <a href="https://www.youtube.com/@boryiscute" target="_blank">
-            <img width="200" height="150" src="bori_youtube.png" alt="보리 유튜브 바로가기">
-        </a>
-
           <br>
-          <br>
-          <a href="https://blog.naver.com/puro0904" target="_blank"> <img wide="236" height="164" src="blog frog.png"> </a>
+          <img wide="236" height="164" src="blog frog.png"> </a>
           <br>
           <br>
           <br>
@@ -61,27 +53,28 @@
         <title>비밀번호 입력</title>
       
         <h2>그림판 들어가기</h2>
-        <input type="password" id="pw" placeholder="비밀번호를 입력하세요">
-        <button onclick="checkPassword()">입장하기</button>
+        <input type="password" id="pw" placeholder="비밀번호를 입력하십쇼">
+        <button onclick="checkPassword()" id="pwbotton">입장하기</button>
       
-        <script>
+       <script>
           function checkPassword() {
-            const pw = document.getElementById("pw").value;
-            if (pw === "1024") {
+            const pw = document.getElementById("pw").value.trim();
+
+            if (pw === "") {
+              alert("입력을 하시지요");
+            } else if (pw === "1024") {
               window.location.href = "board/board.html";
             } else {
               alert("아니죠?");
             }
           }
-        </script>
-      
-          <div>
-            <p id="box1"></p>
-            <p id="box2"></p>
-            <p id="box3"></p>
-          </div>
+       </script>
 
-        <iframe width="100%" height="200%" src="https://www.youtube.com/embed/KIwO9msxuk8?si=5gcQBT7UrBkZy2vz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <br>
+       <br>
+      
+
+        <iframe class="borivid" src="https://www.youtube.com/embed/KIwO9msxuk8?si=5gcQBT7UrBkZy2vz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br>
         <br>
         <br>
