@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>말차 </title>
+        <title>PDF 변환하기 샤갈! </title>
         <link rel="icon" href="../Faviconai.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="titlestyle.css">
         <script src="script.js" defer ></script>
@@ -15,7 +15,7 @@
       <div class="container" id="menuWrap">
         <h1 class="main" id="toggleTitle">말차 서버</h1>
         <div class="option-boxes" id="optionBoxes">
-          <div class="option" id="option1">말차의 인생</div>
+          <div class="option" id="option1">PDF 변환</div>
           <div class="option" id="option2">바질의 등장</div>
           <div class="option" id="option3">문의</div>
         </div>
@@ -35,20 +35,37 @@
         });
           
       </script>
-        <div class="board">
-        <h1>말차의 인생</h1>
+        <div class="wrap">
+    <div class="card">
+      <h1>PPTX → PDF 변환</h1>
+      <div class="sub">여러 개의 PPTX 파일을 한 번에 변환하고 ZIP으로 다운로드</div>
+
+      <div class="dropzone" id="dropzone">
+        <div class="machine">⚙️</div>
+        <div class="drop-title">파일을 넣어주세요 샤갈</div>
+        <div class="drop-desc">PPTX 파일 여러개를 끌어놓거나 선택하기</div>
+
+        <label class="file-btn" for="fileInput">파일 선택하기</label>
+        <input class="hidden" type="file" id="fileInput" accept=".pptx" multiple />
+
+        <div class="file-list" id="fileList">
+          선택된 파일이 없음
+        </div>
       </div>
 
-      <div>
-        <p class="storymalcha"> 말차는 아주 작고 꿈이 많은 아이였어요. 말차는 1월 26일애 입양되었답니다. 
-          >이 말차는 예쁜 주인을 만나 무럭무럭 자랐어요. 
-          아직은 인큐베이터 안에 있는 작은 식물이었지만, 언젠가 크고 하늘이 뻥 뚫린 집에 살게 될것을 희망하면서 살아가고 있었답니다.
-           마침 예쁜 주인도 작고 작은 말차에게 어떤 집을 선물해줄지 고민하고 있었어요. 
-           주인은 말차를 너무 사랑한 나머지 항상 말차를 데리고 다녔답니다. 그런데 어느날, 말차는 실수로 바닥에 떨어지게 되었어요.
-           말차의 잎은 줄기와 분해되어 가루가 되어버리고 이제 영양분을 흡수할 수 없게 된 말차는 죽어갔답니다. 그래도 말차는 행복했어요. 
-           비록 크나큰 집과 뻥 뚫린 하늘을 마주하지는 못했지만, 따뜻하고 포근한 인큐베이터 안에서 주인의 사랑을 듬뿍 받고 자라왔기 때문이죠.
-            유리창 너머로 슬퍼하는 주인을 보면서 말차는 괜찮다고, 그동안 정말 재밌었다고 말을 건네주었답니다"</p>
+      <div class="actions">
+        <button class="convert-btn" id="convertBtn">변환 시작</button>
       </div>
+
+      <div class="status" id="status">파일을 선택하세요</div>
+      <div class="download-area" id="downloadArea"></div>
+      <div class="tips">파일이 여러개일때 변환 결과는 ZIP 파일로 제공됩니다</div>
+    </div>
+  </div>
+
+  <script src="convert.js"></script>
+
+
 
       <div style="height: 120vh;"></div>
 
