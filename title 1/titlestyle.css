@@ -87,7 +87,7 @@ body {
 body {
   margin: 0;
   font-family: "Pretendard", "Noto Sans KR", sans-serif;
-  background: linear-gradient(180deg, #f6f8fb 0%, #eef3ff 100%);
+  background: linear-gradient(180deg, #f6fbf9 0%, #eefffb 100%);
   color: #1f2937;
 }
 
@@ -169,7 +169,7 @@ h1 {
   color: #218a3b;
   border-radius: 14px;
   font-weight: 700;
-  border: 1px solid #dbe4ff;
+  border: 1px solid #dbfff4;
   cursor: pointer;
   transition: 0.2s ease;
 }
