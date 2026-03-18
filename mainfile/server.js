@@ -7,7 +7,6 @@ const fsp = fs.promises;
 const { spawn } = require("child_process");
 const archiver = require("archiver");
 const { v4: uuidv4 } = require("uuid");
-const path = require("path");
 
 const app = express();
 app.use(express.static(__dirname));
