@@ -7,8 +7,14 @@ const fsp = fs.promises;
 const { spawn } = require("child_process");
 const archiver = require("archiver");
 const { v4: uuidv4 } = require("uuid");
+const path = require("path");
 
 const app = express();
+app.use(express.static(path.join(__dirname, "..")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "index.html"));
+});
 app.use(cors());
 app.use(express.json());
 
