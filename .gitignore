@@ -1,0 +1,8 @@
+mainfile/node_modules
+mainfile/uploads
+mainfile/results
+mainfile/tmp
+mainfile/temp
+node_modules
+.env
+.DS_Store
