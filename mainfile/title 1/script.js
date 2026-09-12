@@ -96,7 +96,7 @@ convertBtn.addEventListener("click", async () => {
       formData.append("files", file);
     });
 
-    await fetch("/upload-multiple", {
+    const response = await fetch("/upload-multiple", {
       method: "POST",
       body: formData
     });

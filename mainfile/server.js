@@ -232,11 +232,6 @@ const upload = multer({
   }
 });
 
-// 기본 확인
-app.get("/", (req, res) => {
-  res.send("Mainfile server running");
-});
-
 /**
  * 여러 PPTX 업로드 -> PDF 변환
  * 1개 성공 시 PDF 직접 링크 반환
